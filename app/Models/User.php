@@ -41,7 +41,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    
+
     //relacion de uno a uno (Users- Profiles)
     public function profile(){
         return $this->hasOne(profile::class);
@@ -53,7 +53,7 @@ class User extends Authenticatable
     }
 
     //relacion de uno a muchos (user-comment)
-    public function comments()
+    public function coments()
     {
         return $this->hasMany(coment::class);
     }

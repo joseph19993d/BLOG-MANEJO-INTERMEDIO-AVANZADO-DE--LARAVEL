@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('coments', function (Blueprint $table) {
             $table->id();
             $table->tinyInteger('value');//tinyInteger porque es un int pequeño
-            $table->string('decription',255);
+            $table->string('description',255);
             //relaciones
             //relacion con usuario
             $table->unsignedBigInteger('user_id');
