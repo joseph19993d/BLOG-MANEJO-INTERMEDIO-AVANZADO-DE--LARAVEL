@@ -31,10 +31,9 @@ return new class extends Migration
             ->onUpdate('cascade');
             //unsignedIBigInteger('user_id')
             //t->foreign()
-
-
-            //forma de convenciones:
+            //forma de convenciones: 
             //$table->foreignId('user_id')->constrained();
+
             $table->timestamps();
         });
     }
